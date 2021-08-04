@@ -5,7 +5,7 @@
 		<Option title="appname"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\share\;CMake Files\..\..\..\usr\share\treefrog\;CMake Files\..\..\..\usr\share\treefrog\cmake\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Xml\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Sql\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Concurrent\;CMake Files\cmake\;CMake Files\helpers\;CMake Files\models\;CMake Files\models\uctp_genetic_algorithm-prefix\;CMake Files\models\uctp_genetic_algorithm-prefix\tmp\;CMake Files\views\;CMake Files\controllers\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\share\;CMake Files\..\..\..\usr\share\treefrog\;CMake Files\..\..\..\usr\share\treefrog\cmake\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Xml\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Sql\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Concurrent\;CMake Files\cmake\;CMake Files\helpers\;CMake Files\models\;CMake Files\views\;CMake Files\controllers\;CMake Files\3rdparty\;CMake Files\3rdparty\genetic_algorithm_uctp\;CMake Files\3rdparty\genetic_algorithm_uctp\lib\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/timas/UCTP_"/>
@@ -101,16 +101,6 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/helpers/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="uctp_genetic_algorithm">
-				<Option working_dir="/home/timas/UCTP_/models"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 uctp_genetic_algorithm"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="model">
 				<Option output="/home/timas/UCTP_/lib/libmodel.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/timas/UCTP_/models"/>
@@ -130,6 +120,7 @@
 					<Add directory="/home/timas/UCTP_/models/objects"/>
 					<Add directory="/home/timas/UCTP_/models/sqlobjects"/>
 					<Add directory="/home/timas/UCTP_/models/mongoobjects"/>
+					<Add directory="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
 					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
@@ -164,6 +155,7 @@
 					<Add directory="/home/timas/UCTP_/models/objects"/>
 					<Add directory="/home/timas/UCTP_/models/sqlobjects"/>
 					<Add directory="/home/timas/UCTP_/models/mongoobjects"/>
+					<Add directory="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
 					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
@@ -209,6 +201,7 @@
 					<Add directory="/home/timas/UCTP_/models/objects"/>
 					<Add directory="/home/timas/UCTP_/models/sqlobjects"/>
 					<Add directory="/home/timas/UCTP_/models/mongoobjects"/>
+					<Add directory="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
 					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
@@ -244,6 +237,7 @@
 					<Add directory="/home/timas/UCTP_/models/objects"/>
 					<Add directory="/home/timas/UCTP_/models/sqlobjects"/>
 					<Add directory="/home/timas/UCTP_/models/mongoobjects"/>
+					<Add directory="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
 					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
@@ -299,6 +293,7 @@
 					<Add directory="/home/timas/UCTP_/models/objects"/>
 					<Add directory="/home/timas/UCTP_/models/sqlobjects"/>
 					<Add directory="/home/timas/UCTP_/models/mongoobjects"/>
+					<Add directory="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
 					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
@@ -334,6 +329,7 @@
 					<Add directory="/home/timas/UCTP_/models/objects"/>
 					<Add directory="/home/timas/UCTP_/models/sqlobjects"/>
 					<Add directory="/home/timas/UCTP_/models/mongoobjects"/>
+					<Add directory="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
 					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
@@ -359,7 +355,80 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/controllers/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="GeneticAlgorithm">
+				<Option output="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/libGeneticAlgorithm.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLIBCXX_USE_CXX14_ABI=0"/>
+					<Add directory="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/GeneticAlgorithm_autogen/include"/>
+					<Add directory="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/Makefile&quot;  VERBOSE=1 GeneticAlgorithm"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GeneticAlgorithm/fast">
+				<Option output="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/libGeneticAlgorithm.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLIBCXX_USE_CXX14_ABI=0"/>
+					<Add directory="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/GeneticAlgorithm_autogen/include"/>
+					<Add directory="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/Makefile&quot;  VERBOSE=1 GeneticAlgorithm/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GeneticAlgorithm_autogen">
+				<Option working_dir="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/Makefile&quot;  VERBOSE=1 GeneticAlgorithm_autogen"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/GeneticAlgorithm_autogen/mocs_compilation.cpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/include/auxiliary.hpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/include/geneticRules.hpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/include/geneticStructure.hpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/include/geneticTransformations.hpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/source/auxiliary.cpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/source/geneticRules.cpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/source/geneticStructure.cpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/source/geneticTransformations.cpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
 		<Unit filename="/home/timas/UCTP_/controllers/applicationcontroller.cpp">
 			<Option target="controller"/>
 		</Unit>
@@ -687,14 +756,17 @@
 		<Unit filename="/home/timas/UCTP_/models/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\models\"/>
 		</Unit>
-		<Unit filename="/home/timas/UCTP_/models/uctp_genetic_algorithm-prefix/tmp/uctp_genetic_algorithm-cfgcmd.txt.in">
-			<Option virtualFolder="CMake Files\models\uctp_genetic_algorithm-prefix\tmp\"/>
-		</Unit>
 		<Unit filename="/home/timas/UCTP_/views/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\views\"/>
 		</Unit>
 		<Unit filename="/home/timas/UCTP_/controllers/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\controllers\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rdparty\genetic_algorithm_uctp\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/3rdparty/genetic_algorithm_uctp/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rdparty\genetic_algorithm_uctp\lib\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

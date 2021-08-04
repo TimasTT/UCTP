@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <%#include "objects/timetable.h" %>
+<%#include "objects/timeslot.h" %>
+<%#include "objects/auditory.h" %>
+<%#include "objects/studentsgroup.h" %>
+<%#include "objects/teacher.h" %>
+<%#include "objects/subject.h" %>
+
 <html>
 <head>
   <meta charset="UTF-8">
@@ -10,6 +16,7 @@
 <h1>Listing Timetable</h1>
 
 <%== linkTo("Create a new Timetable", urla("create")) %><br />
+<%== linkTo("Remove Timetable", urla("removeAll"), Tf::Post, "confirm('Are you sure?')") %><br />
 <br />
 <table border="1" cellpadding="5" style="border: 1px #d0d0d0 solid; border-collapse: collapse;">
   <tr>
@@ -19,16 +26,19 @@
     <th>BlockId</th>
   </tr>
 <% tfetch(QList<Timetable>, timetableList); %>
-<% for (const auto &i : timetableList) { %>
+<% tfetch(QList<Timeslot>, timeSlots); %>
+<% tfetch(QList<Auditory>, auditories); %>
+<% tfetch(QList<StudentsGroup>, groups); %>
+<% tfetch(QList<Teacher>, teachers); %>
+<% tfetch(QList<Subject>, subjects); %>
+<% foreach (Timetable tt, timetableList) { %>
   <tr>
-    <td><%= i.id() %></td>
-    <td><%= i.timeslotId() %></td>
-    <td><%= i.auditoryId() %></td>
-    <td><%= i.blockId() %></td>
+    <td><%= tt.id() %></td>
+    <td><%= tt.timeslotId() %></td>
+    <td><%= tt.auditoryId() %></td>
+    <td><%= tt.blockId() %></td>
     <td>
-      <%== linkTo("Show", urla("show", i.id())) %>
-      <%== linkTo("Edit", urla("save", i.id())) %>
-      <%== linkTo("Remove", urla("remove", i.id()), Tf::Post, "confirm('Are you sure?')") %>
+      <%== linkTo("Show", urla("show", tt.id())) %>
     </td>
   </tr>
 <% } %>

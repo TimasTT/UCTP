@@ -31,16 +31,6 @@ ExternalProject_Add(
 )
 ExternalProject_Get_Property(uctp_genetic_algorithm source_dir binary_dir)]]
 
-include(ExternalProject)
-ExternalProject_Add(
-        uctp_genetic_algorithm
-        GIT_TAG "master"
-        GIT_REPOSITORY "https://github.com/Kam1runetzLabs/uctp_genetic_algorithm"
-        SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/lib/uctp_genetic_algorithm
-        INSTALL_COMMAND ""
-)
-ExternalProject_Get_Property(uctp_genetic_algorithm source_dir binary_dir)
-
 target_include_directories(model PUBLIC
         ${Qt5Core_INCLUDE_DIRS}
         ${Qt5Network_INCLUDE_DIRS}
@@ -52,6 +42,7 @@ target_include_directories(model PUBLIC
         ${PROJECT_SOURCE_DIR}/models/objects
         ${PROJECT_SOURCE_DIR}/models/sqlobjects
         ${PROJECT_SOURCE_DIR}/models/mongoobjects
+        ${PROJECT_SOURCE_DIR}/3rdparty/genetic_algorithm_uctp/lib/include
         )
 target_link_libraries(model
         Qt5::Core
@@ -61,6 +52,7 @@ target_link_libraries(model
         Qt5::Concurrent
         ${TreeFrog_LIB}
         helper
+        GeneticAlgorithm
         )
 set_target_properties(model PROPERTIES
         LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib
@@ -72,5 +64,4 @@ set_target_properties(model PROPERTIES
         )
 add_dependencies(model
         helper
-        uctp_genetic_algorithm
         )

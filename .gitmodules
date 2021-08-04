@@ -1,0 +1,3 @@
+[submodule "3rdparty/genetic_algorithm_uctp"]
+	path = 3rdparty/genetic_algorithm_uctp
+	url = https://github.com/TimasTT/Genetic_algorithm_for_UCTP.git
