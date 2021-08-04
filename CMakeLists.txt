@@ -5,6 +5,7 @@ project(appname CXX)
 # C++14
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 # cxx options
 if (MSVC)
   set(CMAKE_CXX_FLAGS         "/DUNICODE /D_UNICODE")

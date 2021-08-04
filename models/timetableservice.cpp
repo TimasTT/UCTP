@@ -2,7 +2,6 @@
 #include "objects/timetable.h"
 #include <TreeFrogModel>
 
-
 void TimetableService::index()
 {
     auto timetableList = Timetable::getAll();

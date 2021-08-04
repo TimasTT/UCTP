@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="appname"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\share\;CMake Files\..\..\..\usr\share\treefrog\;CMake Files\..\..\..\usr\share\treefrog\cmake\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Xml\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Sql\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Concurrent\;CMake Files\cmake\;CMake Files\helpers\;CMake Files\models\;CMake Files\models\uctp_genetic_algorithm-prefix\;CMake Files\models\uctp_genetic_algorithm-prefix\tmp\;CMake Files\views\;CMake Files\controllers\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/timas/UCTP_"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/timas/UCTP_"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/timas/UCTP_"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cmake">
+				<Option working_dir="/home/timas/UCTP_"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 cmake"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="helper">
+				<Option output="/home/timas/UCTP_/lib/libhelper.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/timas/UCTP_/helpers"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTF_DLL"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/home/timas/UCTP_/helpers/helper_autogen/include"/>
+					<Add directory="/usr/include/treefrog"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/helpers/Makefile&quot;  VERBOSE=1 helper"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/helpers/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/helpers/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/helpers/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="helper/fast">
+				<Option output="/home/timas/UCTP_/lib/libhelper.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/timas/UCTP_/helpers"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTF_DLL"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/home/timas/UCTP_/helpers/helper_autogen/include"/>
+					<Add directory="/usr/include/treefrog"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/helpers/Makefile&quot;  VERBOSE=1 helper/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/helpers/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/helpers/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/helpers/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="helper_autogen">
+				<Option working_dir="/home/timas/UCTP_/helpers"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/helpers/Makefile&quot;  VERBOSE=1 helper_autogen"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/helpers/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/helpers/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/helpers/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="uctp_genetic_algorithm">
+				<Option working_dir="/home/timas/UCTP_/models"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 uctp_genetic_algorithm"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="model">
+				<Option output="/home/timas/UCTP_/lib/libmodel.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/timas/UCTP_/models"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTF_DLL"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add option="-DQT_XML_LIB"/>
+					<Add option="-DQT_SQL_LIB"/>
+					<Add option="-DQT_CONCURRENT_LIB"/>
+					<Add directory="/home/timas/UCTP_/models/model_autogen/include"/>
+					<Add directory="/usr/include/treefrog"/>
+					<Add directory="/home/timas/UCTP_/models"/>
+					<Add directory="/home/timas/UCTP_/models/objects"/>
+					<Add directory="/home/timas/UCTP_/models/sqlobjects"/>
+					<Add directory="/home/timas/UCTP_/models/mongoobjects"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtNetwork"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtXml"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtSql"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtConcurrent"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 model"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="model/fast">
+				<Option output="/home/timas/UCTP_/lib/libmodel.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/timas/UCTP_/models"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTF_DLL"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add option="-DQT_XML_LIB"/>
+					<Add option="-DQT_SQL_LIB"/>
+					<Add option="-DQT_CONCURRENT_LIB"/>
+					<Add directory="/home/timas/UCTP_/models/model_autogen/include"/>
+					<Add directory="/usr/include/treefrog"/>
+					<Add directory="/home/timas/UCTP_/models"/>
+					<Add directory="/home/timas/UCTP_/models/objects"/>
+					<Add directory="/home/timas/UCTP_/models/sqlobjects"/>
+					<Add directory="/home/timas/UCTP_/models/mongoobjects"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtNetwork"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtXml"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtSql"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtConcurrent"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 model/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="model_autogen">
+				<Option working_dir="/home/timas/UCTP_/models"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 model_autogen"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/models/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="view">
+				<Option output="/home/timas/UCTP_/lib/libview.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/timas/UCTP_/views"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTF_DLL"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add option="-DQT_XML_LIB"/>
+					<Add option="-DQT_SQL_LIB"/>
+					<Add option="-DQT_CONCURRENT_LIB"/>
+					<Add directory="/home/timas/UCTP_/views/view_autogen/include"/>
+					<Add directory="/usr/include/treefrog"/>
+					<Add directory="/home/timas/UCTP_/helpers"/>
+					<Add directory="/home/timas/UCTP_/models"/>
+					<Add directory="/home/timas/UCTP_/models/objects"/>
+					<Add directory="/home/timas/UCTP_/models/sqlobjects"/>
+					<Add directory="/home/timas/UCTP_/models/mongoobjects"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtNetwork"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtXml"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtSql"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtConcurrent"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 view"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="view/fast">
+				<Option output="/home/timas/UCTP_/lib/libview.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/timas/UCTP_/views"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTF_DLL"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add option="-DQT_XML_LIB"/>
+					<Add option="-DQT_SQL_LIB"/>
+					<Add option="-DQT_CONCURRENT_LIB"/>
+					<Add directory="/home/timas/UCTP_/views/view_autogen/include"/>
+					<Add directory="/usr/include/treefrog"/>
+					<Add directory="/home/timas/UCTP_/helpers"/>
+					<Add directory="/home/timas/UCTP_/models"/>
+					<Add directory="/home/timas/UCTP_/models/objects"/>
+					<Add directory="/home/timas/UCTP_/models/sqlobjects"/>
+					<Add directory="/home/timas/UCTP_/models/mongoobjects"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtNetwork"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtXml"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtSql"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtConcurrent"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 view/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="genview">
+				<Option working_dir="/home/timas/UCTP_/views"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 genview"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="view_autogen">
+				<Option working_dir="/home/timas/UCTP_/views"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 view_autogen"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/views/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="controller">
+				<Option output="/home/timas/UCTP_/lib/libcontroller.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/timas/UCTP_/controllers"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTF_DLL"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add option="-DQT_XML_LIB"/>
+					<Add option="-DQT_SQL_LIB"/>
+					<Add option="-DQT_CONCURRENT_LIB"/>
+					<Add directory="/home/timas/UCTP_/controllers/controller_autogen/include"/>
+					<Add directory="/usr/include/treefrog"/>
+					<Add directory="/home/timas/UCTP_/helpers"/>
+					<Add directory="/home/timas/UCTP_/models"/>
+					<Add directory="/home/timas/UCTP_/models/objects"/>
+					<Add directory="/home/timas/UCTP_/models/sqlobjects"/>
+					<Add directory="/home/timas/UCTP_/models/mongoobjects"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtNetwork"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtXml"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtSql"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtConcurrent"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/controllers/Makefile&quot;  VERBOSE=1 controller"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/controllers/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/controllers/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/controllers/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="controller/fast">
+				<Option output="/home/timas/UCTP_/lib/libcontroller.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/timas/UCTP_/controllers"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTF_DLL"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add option="-DQT_XML_LIB"/>
+					<Add option="-DQT_SQL_LIB"/>
+					<Add option="-DQT_CONCURRENT_LIB"/>
+					<Add directory="/home/timas/UCTP_/controllers/controller_autogen/include"/>
+					<Add directory="/usr/include/treefrog"/>
+					<Add directory="/home/timas/UCTP_/helpers"/>
+					<Add directory="/home/timas/UCTP_/models"/>
+					<Add directory="/home/timas/UCTP_/models/objects"/>
+					<Add directory="/home/timas/UCTP_/models/sqlobjects"/>
+					<Add directory="/home/timas/UCTP_/models/mongoobjects"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtNetwork"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtXml"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtSql"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt5/QtConcurrent"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/controllers/Makefile&quot;  VERBOSE=1 controller/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/controllers/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/controllers/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/controllers/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="controller_autogen">
+				<Option working_dir="/home/timas/UCTP_/controllers"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/timas/UCTP_/controllers/Makefile&quot;  VERBOSE=1 controller_autogen"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/timas/UCTP_/controllers/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/timas/UCTP_/controllers/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/timas/UCTP_/controllers/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/timas/UCTP_/controllers/applicationcontroller.cpp">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/applicationcontroller.h">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/auditorycontroller.cpp">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/auditorycontroller.h">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/blockcontroller.cpp">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/blockcontroller.h">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/controller_autogen/mocs_compilation.cpp">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/studentsgroupcontroller.cpp">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/studentsgroupcontroller.h">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/subjectcontroller.cpp">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/subjectcontroller.h">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/teachercontroller.cpp">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/teachercontroller.h">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/timeslotcontroller.cpp">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/timeslotcontroller.h">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/timetablecontroller.cpp">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/timetablecontroller.h">
+			<Option target="controller"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/helpers/applicationhelper.cpp">
+			<Option target="helper"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/helpers/applicationhelper.h">
+			<Option target="helper"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/helpers/helper_autogen/mocs_compilation.cpp">
+			<Option target="helper"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/auditoryservice.cpp">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/auditoryservice.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/blockservice.cpp">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/blockservice.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/model_autogen/mocs_compilation.cpp">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/objects/auditory.cpp">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/objects/auditory.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/objects/block.cpp">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/objects/block.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/objects/studentsgroup.cpp">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/objects/studentsgroup.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/objects/subject.cpp">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/objects/subject.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/objects/teacher.cpp">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/objects/teacher.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/objects/timeslot.cpp">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/objects/timeslot.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/objects/timetable.cpp">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/objects/timetable.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/sqlobjects/auditoryobject.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/sqlobjects/blockobject.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/sqlobjects/studentsgroupobject.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/sqlobjects/subjectobject.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/sqlobjects/teacherobject.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/sqlobjects/timeslotobject.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/sqlobjects/timetableobject.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/studentsgroupservice.cpp">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/studentsgroupservice.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/subjectservice.cpp">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/subjectservice.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/teacherservice.cpp">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/teacherservice.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/timeslotservice.cpp">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/timeslotservice.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/timetableservice.cpp">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/timetableservice.h">
+			<Option target="model"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/auditory_createView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/auditory_indexView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/auditory_saveView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/auditory_showView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/block_createView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/block_indexView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/block_saveView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/block_showView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/studentsgroup_createView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/studentsgroup_indexView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/studentsgroup_saveView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/studentsgroup_showView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/subject_createView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/subject_indexView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/subject_saveView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/subject_showView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/teacher_createView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/teacher_indexView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/teacher_saveView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/teacher_showView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/timeslot_createView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/timeslot_indexView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/timeslot_saveView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/timeslot_showView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/timetable_createView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/timetable_indexView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/timetable_saveView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/timetable_showView.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/view_autogen/mocs_compilation.cpp">
+			<Option target="view"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/share/treefrog/cmake/TreeFrogConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\share\treefrog\cmake\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Xml/Qt5XmlConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Xml\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Xml/Qt5XmlConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Xml\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Sql\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Sql\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Concurrent/Qt5ConcurrentConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Concurrent\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Concurrent/Qt5ConcurrentConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Concurrent\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/cmake/TargetCmake.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/helpers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\helpers\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\models\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/models/uctp_genetic_algorithm-prefix/tmp/uctp_genetic_algorithm-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\models\uctp_genetic_algorithm-prefix\tmp\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/views/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\views\"/>
+		</Unit>
+		<Unit filename="/home/timas/UCTP_/controllers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\controllers\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,7 +1,7 @@
 #include <TreeFrogModel>
+
 #include "timetable.h"
 #include "sqlobjects/timetableobject.h"
-
 
 Timetable::Timetable() :
     TAbstractModel(),
@@ -87,6 +87,14 @@ Timetable Timetable::create(const QVariantMap &values)
         model.d->clear();
     }
     return model;
+}
+
+void Timetable::calculateTimetable(const QList<Block> &blocks,
+                               const QList<Subject> &subjects,
+                               const QList<Auditory> &classrooms,
+                               const QList<Timeslot> &timeSlots,
+                               QList<Timetable> &result) {
+
 }
 
 Timetable Timetable::get(int id)
