@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<%#include "objects/auditory.h" %>
+<% tfetch(Auditory, auditory); %>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title><%= controller()->name() + ": " + controller()->activeAction() %></title>
+</head>
+<body>
+<p style="color: red"><%=$ error %></p>
+<p style="color: green"><%=$ notice %></p>
+
+<h1>Showing Auditory</h1>
+<dt>ID</dt><dd><%= auditory.id() %></dd><br />
+<dt>AuditoryName</dt><dd><%= auditory.auditoryName() %></dd><br />
+<dt>AuditoryType</dt><dd><%= auditory.auditoryType() %></dd><br />
+
+<%== linkTo("Edit", urla("save", auditory.id())) %> |
+<%== linkTo("Back", urla("index")) %>
+
+</body>
+</html>

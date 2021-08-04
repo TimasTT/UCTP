@@ -15,3 +15,17 @@ include(../appbase.pri)
 
 HEADERS += applicationcontroller.h
 SOURCES += applicationcontroller.cpp
+HEADERS += studentsgroupcontroller.h
+SOURCES += studentsgroupcontroller.cpp
+HEADERS += blockcontroller.h
+SOURCES += blockcontroller.cpp
+HEADERS += auditorycontroller.h
+SOURCES += auditorycontroller.cpp
+HEADERS += subjectcontroller.h
+SOURCES += subjectcontroller.cpp
+HEADERS += teachercontroller.h
+SOURCES += teachercontroller.cpp
+HEADERS += timeslotcontroller.h
+SOURCES += timeslotcontroller.cpp
+HEADERS += timetablecontroller.h
+SOURCES += timetablecontroller.cpp

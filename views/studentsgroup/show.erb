@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<%#include "objects/studentsgroup.h" %>
+<% tfetch(StudentsGroup, studentsGroup); %>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title><%= controller()->name() + ": " + controller()->activeAction() %></title>
+</head>
+<body>
+<p style="color: red"><%=$ error %></p>
+<p style="color: green"><%=$ notice %></p>
+
+<h1>Showing Students Group</h1>
+<dt>ID</dt><dd><%= studentsGroup.id() %></dd><br />
+<dt>GroupName</dt><dd><%= studentsGroup.groupName() %></dd><br />
+
+<%== linkTo("Edit", urla("save", studentsGroup.id())) %> |
+<%== linkTo("Back", urla("index")) %>
+
+</body>
+</html>

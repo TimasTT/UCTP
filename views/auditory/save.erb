@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<%#include "objects/auditory.h" %>
+<% tfetch(QVariantMap, auditory); %>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title><%= controller()->name() + ": " + controller()->activeAction() %></title>
+</head>
+<body>
+<p style="color: red"><%=$ error %></p>
+<p style="color: green"><%=$ notice %></p>
+
+<h1>Editing Auditory</h1>
+
+<%== formTag(urla("save", auditory["id"]), Tf::Post) %>
+  <p>
+    <label>ID<br /><input type="text" name="auditory[id]" value="<%= auditory["id"] %>" readonly="readonly" /></label>
+  </p>
+  <p>
+    <label>AuditoryName<br /><input type="text" name="auditory[auditoryName]" value="<%= auditory["auditoryName"] %>" /></label>
+  </p>
+  <p>
+    <label>AuditoryType<br /><input type="text" name="auditory[auditoryType]" value="<%= auditory["auditoryType"] %>" /></label>
+  </p>
+  <p>
+    <input type="submit" value="Save" />
+  </p>
+</form>
+
+<%== linkTo("Show", urla("show", auditory["id"])) %> |
+<%== linkTo("Back", urla("index")) %>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<%#include "objects/timeslot.h" %>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title><%= controller()->name() + ": " + controller()->activeAction() %></title>
+</head>
+<body>
+
+<h1>Listing Timeslot</h1>
+
+<%== linkTo("Create a new Timeslot", urla("create")) %><br />
+<br />
+<table border="1" cellpadding="5" style="border: 1px #d0d0d0 solid; border-collapse: collapse;">
+  <tr>
+    <th>ID</th>
+    <th>TimeslotName</th>
+  </tr>
+<% tfetch(QList<Timeslot>, timeslotList); %>
+<% for (const auto &i : timeslotList) { %>
+  <tr>
+    <td><%= i.id() %></td>
+    <td><%= i.timeslotName() %></td>
+    <td>
+      <%== linkTo("Show", urla("show", i.id())) %>
+      <%== linkTo("Edit", urla("save", i.id())) %>
+      <%== linkTo("Remove", urla("remove", i.id()), Tf::Post, "confirm('Are you sure?')") %>
+    </td>
+  </tr>
+<% } %>
+</table>
+
+</body>
+</html>
