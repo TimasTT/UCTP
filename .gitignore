@@ -561,3 +561,12 @@ views/_src/Makefile
 db/uctpdb
 db/dbfile
 
+db
+plugin
+config
+public
+sql
+
+appbase.pri
+appname.cbp
+
